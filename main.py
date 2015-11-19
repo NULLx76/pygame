@@ -2,11 +2,11 @@
 
 import libtcodpy as libtcod
 
-#actual size of the window
+# actual size of the window
 SCREEN_WIDTH = 80
 SCREEN_HEIGHT = 50
 
-LIMIT_FPS = 20  #20 frames-per-second maximum
+LIMIT_FPS = 20  # 20 frames-per-second maximum
 
 
 def handle_keys():
@@ -51,7 +51,8 @@ while not libtcod.console_is_window_closed():
 
     libtcod.console_put_char(0, playerx, playery, ' ', libtcod.BKGND_NONE)
 
-    #handle keys and exit game if needed
+    # handle keys and exit game if needed
+
     exit = handle_keys()
     if exit:
         break
